@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Events — CIET Portal</title>
+  <link rel="stylesheet" href="css/portal.css"/>
+</head>
+<body>
+<div class="sidebar-overlay" id="sidebar-overlay"></div>
+<div class="app-wrapper">
+  <aside class="sidebar">
+    <div class="sidebar-logo"><div class="logo-icon">CI</div><span class="logo-text">CIET Portal</span></div>
+    <nav class="sidebar-nav">
+      <p class="nav-group-label">MAIN</p>
+      <a class="nav-item" href="index.html"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/></svg>Overview</a>
+      <a class="nav-item" href="education.html"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/></svg>Education</a>
+      <a class="nav-item" href="courses.html"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg>Courses</a>
+      <a class="nav-item" href="results.html"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="20" x2="18" y2="10"/><line x1="12" y1="20" x2="12" y2="4"/><line x1="6" y1="20" x2="6" y2="14"/></svg>Results</a>
+      <p class="nav-group-label">CAREER</p>
+      <a class="nav-item" href="internships.html"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 7V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v2"/></svg>Internships</a>
+      <a class="nav-item" href="projects.html"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>Projects</a>
+      <a class="nav-item" href="research.html"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 3H5a2 2 0 0 0-2 2v4m6-6h10a2 2 0 0 1 2 2v4M9 3v18m0 0h10a2 2 0 0 0 2-2V9M9 21H5a2 2 0 0 1-2-2V9m0 0h18"/></svg>Research</a>
+      <a class="nav-item" href="certifications.html"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>Certifications</a>
+      <p class="nav-group-label">CAMPUS</p>
+      <a class="nav-item" href="cohorts.html"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>Cohorts</a>
+      <a class="nav-item active" href="events.html"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>Events</a>
+    </nav>
+    <div class="sidebar-bottom">
+      <a class="nav-item" href="profile.html"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>Profile</a>
+      <a class="nav-item" href="settings.html"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1-2.83 2.83l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-4 0v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83-2.83l.06-.06A1.65 1.65 0 0 0 4.68 15a1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1 0-4h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 2.83-2.83l.06.06A1.65 1.65 0 0 0 9 4.68a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 4 0v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 2.83l-.06.06A1.65 1.65 0 0 0 19.4 9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 0 4h-.09a1.65 1.65 0 0 0-1.51 1z"/></svg>Settings</a>
+      <a class="nav-item danger" href="#"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4"/><polyline points="16 17 21 12 16 7"/><line x1="21" y1="12" x2="9" y2="12"/></svg>Sign Out</a>
+    </div>
+  </aside>
+
+  <header class="topbar">
+    <div class="topbar-left">
+      <button class="hamburger" id="hamburger"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg></button>
+      <span class="page-title">Events</span>
+      <div class="search-bar"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg><input type="text" placeholder="Search projects, peers, courses..."/></div>
+    </div>
+    <div class="topbar-right">
+      <button class="icon-btn"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"/><path d="M13.73 21a2 2 0 0 1-3.46 0"/></svg></button>
+      <button class="icon-btn"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg></button>
+      <div class="user-chip"><div class="user-chip-info"><div class="name">John Student</div><div class="role">B.Tech CSE</div></div><div class="avatar">J</div></div>
+    </div>
+  </header>
+
+  <main class="main-content">
+    <div class="flex-between">
+      <div>
+        <h1 class="section-title">Campus Events</h1>
+        <p class="section-sub">Your attendance is your network. Every event is a potential connection.</p>
+      </div>
+      <div style="display:flex;gap:8px;">
+        <button class="btn-ghost">Past Events</button>
+        <button class="btn-primary">
+          <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+          Register for Event
+        </button>
+      </div>
+    </div>
+
+    <!-- Upcoming Events -->
+    <div style="margin-bottom:8px;font-size:12px;font-weight:700;color:var(--muted);text-transform:uppercase;letter-spacing:0.06em;">Upcoming This Month</div>
+    <div style="display:flex;flex-direction:column;gap:12px;margin-bottom:24px;">
+
+      <div class="event-card event-card-full">
+        <div class="event-date-box" style="width:56px;height:56px;border-radius:10px;">
+          <div class="day" style="font-size:22px;">22</div>
+          <div class="month" style="font-size:10px;">APR 2026</div>
+        </div>
+        <div class="event-divider"></div>
+        <div class="event-info" style="flex:1;">
+          <div style="display:flex;justify-content:space-between;align-items:flex-start;flex-wrap:wrap;gap:8px;">
+            <div class="event-name" style="font-size:15px;">Spring Code Jam 2026</div>
+            <span class="tag tag-primary">Registered</span>
+          </div>
+          <div class="event-meta">
+            <span><svg xmlns="http://www.w3.org/2000/svg" width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="vertical-align:middle;margin-right:3px;"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>Main Auditorium</span>
+            <span>·</span><span>Friday · 2:00 PM</span>
+            <span>·</span><span>Hackathon</span>
+          </div>
+          <div style="font-size:12px;color:var(--muted);margin-top:6px;">48-hour hackathon with ₹1L prize pool. Build anything. Win everything.</div>
+        </div>
+      </div>
+
+      <div class="event-card event-card-full">
+        <div class="event-date-box" style="width:56px;height:56px;border-radius:10px;">
+          <div class="day" style="font-size:22px;">20</div>
+          <div class="month" style="font-size:10px;">APR 2026</div>
+        </div>
+        <div class="event-divider"></div>
+        <div class="event-info" style="flex:1;">
+          <div style="display:flex;justify-content:space-between;align-items:flex-start;flex-wrap:wrap;gap:8px;">
+            <div class="event-name" style="font-size:15px;">Resume Workshop with HR</div>
+            <span class="tag tag-green">Open</span>
+          </div>
+          <div class="event-meta">
+            <span>Speaker: Priya Sharma, Google</span>
+            <span>·</span><span>Wednesday · 11:00 AM</span>
+          </div>
+          <div style="font-size:12px;color:var(--muted);margin-top:6px;">Interactive workshop to fix common resume mistakes and land FAANG-level roles.</div>
+        </div>
+      </div>
+
+      <div class="event-card event-card-full">
+        <div class="event-date-box" style="width:56px;height:56px;border-radius:10px;background:#fffbeb;">
+          <div class="day" style="font-size:22px;color:#92400e;">28</div>
+          <div class="month" style="font-size:10px;color:#92400e;">APR 2026</div>
+        </div>
+        <div class="event-divider"></div>
+        <div class="event-info" style="flex:1;">
+          <div style="display:flex;justify-content:space-between;align-items:flex-start;flex-wrap:wrap;gap:8px;">
+            <div class="event-name" style="font-size:15px;">Campus Placement Drive</div>
+            <span class="tag tag-amber">Mandatory</span>
+          </div>
+          <div class="event-meta">
+            <span>Companies: Infosys, Wipro, TCS, Capgemini</span>
+            <span>·</span><span>Monday · 9:00 AM</span>
+          </div>
+          <div style="font-size:12px;color:var(--muted);margin-top:6px;">Tier-2 campus recruitment drive. Minimum CGPA: 7.0 required to participate.</div>
+        </div>
+      </div>
+
+      <div class="event-card event-card-full">
+        <div class="event-date-box" style="width:56px;height:56px;border-radius:10px;background:#eff6ff;">
+          <div class="day" style="font-size:22px;color:#1e40af;">15</div>
+          <div class="month" style="font-size:10px;color:#1e40af;">MAY 2026</div>
+        </div>
+        <div class="event-divider"></div>
+        <div class="event-info" style="flex:1;">
+          <div style="display:flex;justify-content:space-between;align-items:flex-start;flex-wrap:wrap;gap:8px;">
+            <div class="event-name" style="font-size:15px;">IEEE Student Paper Presentation</div>
+            <span class="tag tag-blue">Open</span>
+          </div>
+          <div class="event-meta">
+            <span><svg xmlns="http://www.w3.org/2000/svg" width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="vertical-align:middle;margin-right:3px;"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>Seminar Hall B</span>
+            <span>·</span><span>Thursday</span>
+            <span>·</span><span>Research</span>
+          </div>
+          <div style="font-size:12px;color:var(--muted);margin-top:6px;">Present your research paper to a panel of IEEE judges. Shortlisted papers get published.</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Past Events -->
+    <div style="margin-bottom:8px;font-size:12px;font-weight:700;color:var(--muted);text-transform:uppercase;letter-spacing:0.06em;">Past Events — Attended</div>
+    <div class="card">
+      <div class="card-body" style="display:flex;flex-direction:column;gap:10px;">
+        <div style="display:flex;align-items:center;gap:12px;padding:12px;background:var(--bg);border-radius:10px;">
+          <div style="min-width:40px;height:40px;background:#fff;border:1px solid var(--border);border-radius:8px;display:flex;align-items:center;justify-content:center;font-size:11px;font-weight:700;color:var(--muted);text-align:center;flex-direction:column;"><span>FEB</span><span>26</span></div>
+          <div style="flex:1;"><div style="font-size:13px;font-weight:600;">Tech Fest 2026 — Hackathon</div><div style="font-size:11px;color:var(--muted);">Main Auditorium · Hackathon · 2nd Place 🥈</div></div>
+          <span class="tag tag-green">Attended</span>
+        </div>
+        <div style="display:flex;align-items:center;gap:12px;padding:12px;background:var(--bg);border-radius:10px;">
+          <div style="min-width:40px;height:40px;background:#fff;border:1px solid var(--border);border-radius:8px;display:flex;align-items:center;justify-content:center;font-size:11px;font-weight:700;color:var(--muted);text-align:center;flex-direction:column;"><span>JAN</span><span>18</span></div>
+          <div style="flex:1;"><div style="font-size:13px;font-weight:600;">AI + ML Workshop by NASSCOM</div><div style="font-size:11px;color:var(--muted);">Online · Workshop</div></div>
+          <span class="tag tag-green">Attended</span>
+        </div>
+        <div style="display:flex;align-items:center;gap:12px;padding:12px;background:var(--bg);border-radius:10px;">
+          <div style="min-width:40px;height:40px;background:#fff;border:1px solid var(--border);border-radius:8px;display:flex;align-items:center;justify-content:center;font-size:11px;font-weight:700;color:var(--muted);text-align:center;flex-direction:column;"><span>NOV</span><span>12</span></div>
+          <div style="flex:1;"><div style="font-size:13px;font-weight:600;">Startup Pitching Competition</div><div style="font-size:11px;color:var(--muted);">Incubation Center · Pitch · Finalist 🏆</div></div>
+          <span class="tag tag-green">Attended</span>
+        </div>
+      </div>
+    </div>
+  </main>
+</div>
+<script src="js/portal.js"></script>
+</body>
+</html>

@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Dashboard — CIET Portal</title>
+  <meta name="description" content="CIET Student Portal — Overview Dashboard"/>
+  <link rel="stylesheet" href="css/portal.css"/>
+</head>
+<body>
+
+<div class="sidebar-overlay" id="sidebar-overlay"></div>
+
+<div class="app-wrapper">
+  <!-- SIDEBAR -->
+  <aside class="sidebar">
+    <div class="sidebar-logo">
+      <div class="logo-icon">CI</div>
+      <span class="logo-text">CIET Portal</span>
+    </div>
+
+    <nav class="sidebar-nav">
+      <p class="nav-group-label">MAIN</p>
+      <a class="nav-item active" href="index.html" data-page="index.html">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/></svg>
+        Overview
+      </a>
+      <a class="nav-item" href="education.html" data-page="education.html">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/></svg>
+        Education
+      </a>
+      <a class="nav-item" href="courses.html" data-page="courses.html">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg>
+        Courses
+      </a>
+      <a class="nav-item" href="results.html" data-page="results.html">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="20" x2="18" y2="10"/><line x1="12" y1="20" x2="12" y2="4"/><line x1="6" y1="20" x2="6" y2="14"/></svg>
+        Results
+      </a>
+
+      <p class="nav-group-label">CAREER</p>
+      <a class="nav-item" href="internships.html" data-page="internships.html">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 7V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v2"/></svg>
+        Internships
+      </a>
+      <a class="nav-item" href="projects.html" data-page="projects.html">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+        Projects
+      </a>
+      <a class="nav-item" href="research.html" data-page="research.html">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 3H5a2 2 0 0 0-2 2v4m6-6h10a2 2 0 0 1 2 2v4M9 3v18m0 0h10a2 2 0 0 0 2-2V9M9 21H5a2 2 0 0 1-2-2V9m0 0h18"/></svg>
+        Research
+      </a>
+      <a class="nav-item" href="certifications.html" data-page="certifications.html">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+        Certifications
+      </a>
+
+      <p class="nav-group-label">CAMPUS</p>
+      <a class="nav-item" href="cohorts.html" data-page="cohorts.html">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+        Cohorts
+      </a>
+      <a class="nav-item" href="events.html" data-page="events.html">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+        Events
+      </a>
+    </nav>
+
+    <div class="sidebar-bottom">
+      <a class="nav-item" href="profile.html" data-page="profile.html">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+        Profile
+      </a>
+      <a class="nav-item" href="settings.html" data-page="settings.html">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1-2.83 2.83l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-4 0v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83-2.83l.06-.06A1.65 1.65 0 0 0 4.68 15a1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1 0-4h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 2.83-2.83l.06.06A1.65 1.65 0 0 0 9 4.68a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 4 0v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 2.83l-.06.06A1.65 1.65 0 0 0 19.4 9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 0 4h-.09a1.65 1.65 0 0 0-1.51 1z"/></svg>
+        Settings
+      </a>
+      <a class="nav-item danger" href="#">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4"/><polyline points="16 17 21 12 16 7"/><line x1="21" y1="12" x2="9" y2="12"/></svg>
+        Sign Out
+      </a>
+    </div>
+  </aside>
+
+  <!-- TOPBAR -->
+  <header class="topbar">
+    <div class="topbar-left">
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+      </button>
+      <span class="page-title">Dashboard</span>
+      <div class="search-bar">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+        <input type="text" placeholder="Search projects, peers, courses..." aria-label="Search"/>
+      </div>
+    </div>
+    <div class="topbar-right">
+      <button class="icon-btn" title="Notifications" aria-label="Notifications">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"/><path d="M13.73 21a2 2 0 0 1-3.46 0"/></svg>
+      </button>
+      <button class="icon-btn" title="Messages" aria-label="Messages">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+      </button>
+      <div class="user-chip">
+        <div class="user-chip-info">
+          <div class="name">John Student</div>
+          <div class="role">B.Tech CSE</div>
+        </div>
+        <div class="avatar">J</div>
+      </div>
+    </div>
+  </header>
+
+  <!-- MAIN CONTENT -->
+  <main class="main-content">
+
+    <!-- PROFILE BANNER -->
+    <div class="profile-banner">
+      <div class="profile-avatar-large">J</div>
+      <div class="profile-info">
+        <div class="profile-name">
+          John Student
+          <span class="pipe">|</span>
+          <span style="font-weight:400; font-size:16px; opacity:0.85;">B.Tech CSE</span>
+          <span class="pipe">|</span>
+          <span style="font-weight:400; font-size:16px; opacity:0.85;">Class of 2026</span>
+        </div>
+        <div class="profile-bio">"Aspiring Full-Stack Developer"</div>
+        <div class="profile-strength">
+          <span class="strength-label">Profile Strength</span>
+          <div class="strength-bar-wrap">
+            <div class="strength-bar" data-width="65%" style="width:0%"></div>
+          </div>
+          <span class="strength-pct">65%</span>
+          <button class="btn-boost">
+            <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+            Add Internship to boost
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- STATS CARDS -->
+    <div class="stats-grid">
+
+      <!-- Academics -->
+      <div class="stat-card">
+        <div style="display:flex; justify-content:space-between; align-items:center;">
+          <div style="width:36px;height:36px;background:#fffbeb;border-radius:8px;display:flex;align-items:center;justify-content:center;">
+            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#f59e0b" stroke-width="2"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/></svg>
+          </div>
+          <span class="card-label">Academics</span>
+        </div>
+        <div class="cgpa-wrap">
+          <div class="cgpa-circle">
+            <div class="cgpa-value">
+              <span class="cgpa-num">9.2</span>
+              <span class="cgpa-sub">CGPA</span>
+            </div>
+          </div>
+          <div class="cgpa-info">
+            <div class="rank">Top 10%</div>
+            <div class="cohort">of your cohort</div>
+            <div class="trend">
+              <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="23 6 13.5 15.5 8.5 10.5 1 18"/><polyline points="17 6 23 6 23 12"/></svg>
+              +0.3 this sem
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Projects -->
+      <div class="stat-card">
+        <div style="display:flex; justify-content:space-between; align-items:center;">
+          <div style="width:36px;height:36px;background:#fdf2f5;border-radius:8px;display:flex;align-items:center;justify-content:center;">
+            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#AF0C3E" stroke-width="2"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+          </div>
+          <span class="card-label">Projects</span>
+        </div>
+        <div class="project-dots">
+          <div class="project-dot dot-filled"></div>
+          <div class="project-dot dot-filled"></div>
+          <div class="project-dot dot-filled"></div>
+          <div class="project-dot dot-partial"></div>
+          <div class="project-dot dot-empty"></div>
+          <div class="project-dot dot-empty"></div>
+        </div>
+        <div style="display:flex; align-items:baseline; justify-content:space-between; margin-top:4px;">
+          <div class="projects-active">3 <span>Active</span></div>
+          <a href="projects.html" class="link-primary">
+            <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+            Add New
+          </a>
+        </div>
+      </div>
+
+      <!-- Certifications -->
+      <div class="stat-card">
+        <div style="display:flex; justify-content:space-between; align-items:center;">
+          <div class="cert-icon-box">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+          </div>
+          <span class="card-label" style="color:#AF0C3E;">Certified</span>
+        </div>
+        <div class="cert-badges">
+          <span class="cert-badge">AWS Cloud</span>
+          <span class="cert-badge">Azure AI</span>
+        </div>
+        <div class="cert-verified">
+          <strong>2</strong> Verified Credentials
+        </div>
+      </div>
+    </div>
+
+    <!-- BOTTOM ROW -->
+    <div class="col-7-5">
+
+      <!-- Activity Feed -->
+      <div class="card">
+        <div class="card-header-custom">
+          <span style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--muted);">Professional Activity Feed</span>
+        </div>
+        <div class="empty-state">
+          <div class="empty-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4.5 16.5c-1.5 1.26-2 5-2 5s3.74-.5 5-2c.71-.84.7-2.13-.09-2.91a2.18 2.18 0 0 0-2.91-.09z"/><path d="m12 15-3-3a22 22 0 0 1 2-3.95A12.88 12.88 0 0 1 22 2c0 2.72-.78 7.5-6 11a22.35 22.35 0 0 1-4 2z"/><path d="M9 12H4s.55-3.03 2-4c1.62-1.08 5 0 5 0"/><path d="M12 15v5s3.03-.55 4-2c1.08-1.62 0-5 0-5"/></svg>
+          </div>
+          <div class="empty-title">Your feed is waiting to launch!</div>
+          <p class="empty-desc">Share your first project, certification, or internship to start building your professional timeline.</p>
+          <a href="projects.html" class="btn-primary">
+            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+            Post Your First Project
+          </a>
+        </div>
+      </div>
+
+      <!-- Upcoming This Week -->
+      <div class="card">
+        <div class="card-header-custom">
+          <span style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--muted);">Upcoming This Week</span>
+          <a href="events.html" class="link-primary">View All →</a>
+        </div>
+        <div style="padding:20px;">
+          <div class="event-card" style="margin-bottom:10px;padding:14px 16px;">
+            <div class="event-date-box">
+              <div class="day">22</div>
+              <div class="month">Apr</div>
+            </div>
+            <div class="event-divider"></div>
+            <div class="event-info">
+              <div class="event-name" style="font-size:13.5px;">Spring Code Jam 2026</div>
+              <div class="event-meta">
+                <span>Main Auditorium</span>
+                <span>·</span>
+                <span>Friday</span>
+              </div>
+            </div>
+          </div>
+          <div class="event-card" style="padding:14px 16px;">
+            <div class="event-date-box">
+              <div class="day">20</div>
+              <div class="month">Apr</div>
+            </div>
+            <div class="event-divider"></div>
+            <div class="event-info">
+              <div class="event-name" style="font-size:13.5px;">Resume Workshop with HR</div>
+              <div class="event-meta">
+                <span>Priya Sharma, Google</span>
+                <span>·</span>
+                <span>Wednesday</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </main>
+</div>
+
+<script src="js/portal.js"></script>
+</body>
+</html>
