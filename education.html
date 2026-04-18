@@ -67,7 +67,7 @@
     </div>
 
     <!-- Education Cards -->
-    <div class="edu-card">
+    <div class="edu-card" style="position:relative;">
       <div class="edu-icon">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/></svg>
       </div>
@@ -80,10 +80,15 @@
           <span class="tag tag-primary">JNTUA Autonomous</span>
         </div>
       </div>
-      <div class="edu-badge">9.2</div>
+      <div style="display:flex;align-items:center;gap:10px;">
+        <div class="edu-badge">9.2</div>
+        <button class="btn-ghost edu-edit-btn" title="Edit" style="padding:6px 8px;">
+          <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 20h9"/><path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"/></svg>
+        </button>
+      </div>
     </div>
 
-    <div class="edu-card">
+    <div class="edu-card" style="position:relative;">
       <div class="edu-icon">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg>
       </div>
@@ -95,10 +100,15 @@
           <span class="edu-chip">Board of Intermediate Education, AP</span>
         </div>
       </div>
-      <div class="edu-badge" style="background:var(--amber);">96.2%</div>
+      <div style="display:flex;align-items:center;gap:10px;">
+        <div class="edu-badge" style="background:var(--amber);">96.2%</div>
+        <button class="btn-ghost edu-edit-btn" title="Edit" style="padding:6px 8px;">
+          <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 20h9"/><path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"/></svg>
+        </button>
+      </div>
     </div>
 
-    <div class="edu-card">
+    <div class="edu-card" style="position:relative;">
       <div class="edu-icon" style="background:#f0fdf4;">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="#22c55e" stroke-width="2"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg>
       </div>
@@ -110,8 +120,19 @@
           <span class="edu-chip">Board of Secondary Education, AP</span>
         </div>
       </div>
-      <div class="edu-badge" style="background:#16a34a;">9.8</div>
+      <div style="display:flex;align-items:center;gap:10px;">
+        <div class="edu-badge" style="background:#16a34a;">9.8</div>
+        <button class="btn-ghost edu-edit-btn" title="Edit" style="padding:6px 8px;">
+          <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 20h9"/><path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"/></svg>
+        </button>
+      </div>
     </div>
+
+    <!-- Add Education / Rank — dashed card -->
+    <button class="add-edu-btn" onclick="DRAWERS['add-education']()" style="display:flex;align-items:center;justify-content:center;gap:10px;width:100%;padding:18px;background:transparent;border:2px dashed #cbd5e1;border-radius:12px;font-size:13px;font-weight:600;color:#64748b;cursor:pointer;transition:border-color .2s,color .2s,background .2s;margin-bottom:24px;" onmouseover="this.style.borderColor='#AF0C3E';this.style.color='#AF0C3E';this.style.background='rgba(175,12,62,.03)'" onmouseout="this.style.borderColor='#cbd5e1';this.style.color='#64748b';this.style.background='transparent'">
+      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+      Add Education / Rank
+    </button>
 
     <!-- Degree Progress -->
     <div class="two-col-grid" style="margin-top:24px;">
@@ -207,6 +228,28 @@
     </div>
 
   </main>
+  <script>
+    // Wire education edit buttons
+    document.addEventListener('DOMContentLoaded', () => {
+      document.querySelectorAll('.edu-edit-btn').forEach(btn => {
+        btn.addEventListener('click', e => {
+          e.stopPropagation();
+          const card   = btn.closest('.edu-card');
+          const degree = card?.querySelector('.edu-degree')?.textContent || 'Record';
+          openDrawer('Edit: ' + degree, 'Update your academic record.', `
+            <div style="display:flex;flex-direction:column;gap:14px;">
+              <div class="df-group"><label class="df-label">Degree / Level</label><input type="text" class="df-input" value="${degree}"></div>
+              <div class="df-group"><label class="df-label">Institution</label><input type="text" class="df-input" value="${card?.querySelector('.edu-inst')?.textContent || ''}"></div>
+              <div style="display:flex;gap:10px;margin-top:24px;padding-top:20px;border-top:1px solid #e2e8f0;">
+                <button onclick="showToast('Record deleted.','error');closeDrawer();" style="padding:9px 16px;background:#fef2f2;border:1.5px solid #fecaca;border-radius:8px;font-size:13px;font-weight:600;color:#dc2626;cursor:pointer;">Delete</button>
+                <button onclick="closeDrawer()" class="df-btn-outline" style="flex:1;">Cancel</button>
+                <button onclick="showToast('Record updated!','success');closeDrawer();" class="df-btn-primary" style="flex:1;">Save Changes</button>
+              </div>
+            </div>`);
+        });
+      });
+    });
+  </script>
 </div>
 <script src="js/portal.js"></script>
 </body>
