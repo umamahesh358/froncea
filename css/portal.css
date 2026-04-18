@@ -285,9 +285,10 @@ input, textarea, select { font-family: inherit; }
 .main-content {
   margin-left: var(--sidebar-w);
   margin-top: var(--topbar-h);
-  padding: 28px 28px 48px;
+  padding: 28px 32px 48px;
   min-height: calc(100vh - var(--topbar-h));
-  max-width: 1200px;
+  width: calc(100% - var(--sidebar-w));
+  box-sizing: border-box;
 }
 
 /* ====================================================
@@ -309,7 +310,7 @@ input, textarea, select { font-family: inherit; }
 }
 .col-7-5 {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 3fr 2fr;
   gap: 16px;
   margin-top: 16px;
 }
